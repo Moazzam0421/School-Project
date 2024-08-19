@@ -1,0 +1,343 @@
+* {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+}
+
+
+
+.navbar {
+  position: absolute;
+  width: 100%;
+  position: fixed;
+  background-color: rgba(39, 39, 37, 0.712);
+}
+
+.collapse .navbar-collapse .btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.carousel-item{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.521),rgba(0, 0, 0, 0.466));
+}
+
+.carousel-item img{
+  position: relative;
+  z-index: -1;
+}
+
+
+/* #home{
+  color: rgb(0, 107, 194);
+  display: flex;
+  align-items: center;
+  width: fit-content;
+} */
+
+
+@media only screen and (max-width: 768px) {
+  .navbar-brand img {
+    width: 100px;
+    height: 36px;
+  }
+}
+
+@media only screen and (max-width: 488px) {
+  .navbar-brand img {
+    width: 50px;
+    height: 28px;
+  }
+  .navbar-toggler{
+    font-size: 15px;
+    padding: 3px 5px;
+    margin: 0px;
+  }
+}
+.dropdown {
+  padding: 0;
+  margin: 0;
+}
+
+@media (max-width:768px) {
+  .dropdown {
+    padding-bottom: 5px;
+  }
+
+  .dropdown button {
+    padding: 4px 8px;
+  }
+}
+
+@media (max-width: 1431px) {
+  .navbar-nav #login {
+    font-size: 1rem;
+    width: 5rem;
+    height: fit-content;
+  }
+
+}
+
+.navbar-nav #signup {
+  font-size: .9rem;
+  height: 2.5rem;
+  margin-right: 8px;
+}
+
+@media (max-width: 1231px) {
+  .navbar-nav #signup {
+    font-size: .9rem;
+    width: 5.8rem;
+  }
+
+}
+
+
+.border-white{
+  box-shadow: inset 0px 0px 3px  rgb(202, 199, 199);
+}
+
+#form {
+
+  @media (min-width: 1231px) {
+    width: 50%;
+  }
+}
+
+
+
+
+.search-input {
+  position: relative;
+}
+
+.search-input input {
+  padding-right: 30px;
+  /* Adjust this value based on the width of your icon */
+}
+
+.search-icon {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  top: 50%;
+  right: 6px;
+  transform: translateY(-50%);
+}
+
+
+.carousel-item img{
+  width: 100%;
+  height: 90vh;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .carousel-item img{
+    height: 70vh;
+  }
+  
+}
+
+@media only screen and (max-width: 480px) {
+  .carousel-item img{
+    height: 60vh;
+  }
+}
+
+
+@media (max-width: 1749px) {
+  .header-text {
+    font-size: 28px;
+    padding: 10px 0px;
+  }
+}
+
+
+@media (max-width: 992px) {
+  .header-text :nth-child(2) {
+    /* width: 20rem; */
+    font-size: 15px;
+    /* width: fit-content; */
+    padding: 2px 6px;
+  }
+} 
+@media (max-width: 768px) {
+  .header-text :nth-child(n) {
+    margin: 4px;
+    width: 17rem;
+    font-size: 17px;
+    text-align: center;
+  }
+}
+
+
+@media (max-width: 400px) {
+  .header-text :nth-child(n) {
+    width: 18rem;
+    font-size: 17px;
+    text-align: center;
+  }
+}
+
+.carousel-caption #ceo {
+  background-color: rgba(54, 53, 53, 0.808);
+}
+
+
+.school-logo {
+  background-color: rgba(160, 180, 184, 0.479);
+  top: 70%;
+  left: 15%;  /* Adjusted for center alignment */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(-50%);  /* Center align the logo horizontally */
+  box-shadow: 0px 0px 20px black;
+}
+
+.addmission-title i{
+  margin-left: 3.2rem;
+  font-size: 2rem;
+}
+.addmission-title img{
+  margin-left: 2.5rem;
+  width: 4rem;
+}
+
+
+/* Adjust the size of the logo based on the viewport width */
+@media only screen and (max-width: 768px) {
+  .school-logo {
+    top: 70%;  /* Adjust the vertical position for smaller screens */
+    left: 30%;
+  }
+  .addmission-title i{
+    margin-left: 3.4rem;
+    font-size: 1.6rem;
+  }
+  .addmission-title img{
+    margin-left: 3rem;
+    width: 3rem;
+  }
+}
+
+/* Additional adjustments for even smaller screens if needed */
+@media only screen and (max-width: 480px) {
+  .school-logo {
+    top: 80%; 
+    left: 40%;
+  }
+  .addmission-title i{
+    margin-left: 3.4rem;
+    font-size: 1rem;
+  }
+  .addmission-title img{
+    margin-left: 2.4rem;
+    width: 3rem;
+  }
+}
+
+.addmission-title {
+  position: absolute;
+  top: 80%;
+  right: 50%;
+}
+
+.spinner-grow {
+  animation: grow; /* Adjusted duration to include the 4-second delay */
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+}
+
+@keyframes grow {
+  0% { opacity: 0; transform: scale(0.5); }
+  80% { opacity: 1; transform: scale(1); } /* Animation pauses at 80% */
+  100% { opacity: 1; transform: scale(1); } /* Ensures final state is maintained */
+}
+
+@media only screen and (max-width: 768px) {
+  .vr{
+    display: none;
+  }
+}
+
+
+.enroll-text{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 50px 0px;
+}
+
+
+
+.enroll-img{
+  padding: 10px;
+}
+
+
+
+/* .item-1{
+  margin: 10px;
+  padding: 4px;
+}
+.item-2{
+  margin: 10px;
+  padding: 4px;
+}
+.item-2{
+  margin: 10px;
+  padding: 4px;
+}
+.item-2{
+  margin: 10px;
+  padding: 4px;
+} */
+
+
+#video{
+  position: relative;
+  top: 0;
+  bottom: 0;
+  width: 70%;
+  height: fit-content;
+}
+
+/* @media only screen and(min-width: 576px){
+  .card-body:nth-child(2){
+    width: 100%;
+  }
+} */
+
+#title{
+  color: rgb(0, 0, 0);
+  transition: .2s ease-in-out;
+}
+#title:hover{
+  text-decoration-line: underline;
+  color: blue;
+  cursor: pointer;
+}
+.verticle-line{
+  width: 2px;
+  height: 100%;
+  border: 2px solid black;
+}
+
